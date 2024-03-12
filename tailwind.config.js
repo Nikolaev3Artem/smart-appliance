@@ -3,15 +3,11 @@ module.exports = {
   content: ['./*/*.html','./*.html'],
   theme: {
     screens:{
-      'xxl':{'max':'1440px'},
-      'xl':{'max':'1200px'},
+      'xl':{'max':'1280px'},
       'lg':{'max':'1024px'},
-      'md':{'max':'768px'},
-      'sm':{'max':'700px'},
-      'xs':{'max':'500px'}
-    },
-    container:{
-      center:true,
+
+      'md':{'max':'744px'},
+      'xs':{'max':'375px'}
     },
     extend: {
       colors:{
