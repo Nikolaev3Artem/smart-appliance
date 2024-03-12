@@ -18,7 +18,7 @@
                     <h5 class="text-dark-blue font-bold lg:hidden">Mon - Fri: <br>
                         08.00 AM 10.00 PM</h5>
                     <h7 class="text-dark-blue font-bold">Technicians Available Now: February 26</h7>
-                    <a href="tel://+12538933671" class="flex text-dark-blue font-bold text-[18px] lg:hidden">
+                    <a href="tel://+12538933671" class="flex items-center text-dark-blue font-bold text-[18px] lg:hidden">
                         <div><img src="../assets/img/icons/icon Phone blue.png" alt="" class="img-fluid me-3"></div>
                         +12538933671
                     </a>
@@ -27,7 +27,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-dark-blue w-full h-[38px] flex items-center justify-center">
+        <div class="bg-dark-blue w-full h-[38px] flex flex-row items-center justify-center md:justify-end relative">
             <div class="container flex flex-row justify-end gap-[10px] pe-14 lg:hidden">
                 <div class="relative nav_link_wrapper">
                     <h6 class="nav_link">Appliance Repair</h6>
@@ -121,12 +121,33 @@
                 <a href="#"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Reviews</h6></a>
                 <a href="#"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Contact</h6></a>
             </div>
-            <div class="container hidden lg:flex flex-row justify-end gap-10">
+            <div class="container hidden lg:flex flex-row justify-end gap-10 relative">
                 <div><img src="../assets/img/icons/icon Phone white.png" alt="" class="img-fluid"></div>
-                <div><img src="../assets/img/icons/burger.png" alt="" class="img-fluid"></div>
+                <div id="burger_btn">
+                    <img src="../assets/img/icons/burger.png" alt="" class="img-fluid">
+                </div>
+ 
+            </div>
+            <div id="mobile_menu" class="bg-dark-blue flex flex-col items-end justify-end absolute top-[38px] right-0 w-[335px] sm:w-full p-10 gap-4">
+                <a href="#" class="text-white"><h4 class="font-light">Appliance Repair</h4></a>
+                <a href="#" class="text-white"><h4 class="font-light">Brands</h4></a>
+                <a href="#" class="text-white"><h4 class="font-light">Service Areas</h4></a>
+                <a href="#" class="text-white"><h4 class="font-light">About</h4></a>
+                <a href="#" class="text-white"><h4 class="font-light">Blog</h4></a>
+                <a href="#" class="text-white"><h4 class="font-light">Reviews</h4></a>
+                <a href="#" class="text-white"><h4 class="font-light">Contact</h4></a>
+                <div class="mt-10 flex justify-center items-end flex-col">
+                    <h6 class="text-white">Mon - Fri: 08.00 AM 10.00 PM</h6>
+                    <a href="tel://+12538933671" class="flex text-white items-center font-bold text-[18px] mt-[27px]">
+                        <div><img src="../assets/img/icons/icon Phone white.png" alt="" class="img-fluid me-3"></div>
+                        +12538933671
+                    </a>
+                </div>
             </div>
         </div>
 
+
     </header>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

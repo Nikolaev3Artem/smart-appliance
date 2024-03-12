@@ -5,8 +5,8 @@ module.exports = {
     screens:{
       'xl':{'max':'1280px'},
       'lg':{'max':'1024px'},
-
       'md':{'max':'744px'},
+      'sm':{'max':'425px'},
       'xs':{'max':'375px'}
     },
     extend: {
