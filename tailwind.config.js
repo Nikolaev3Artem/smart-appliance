@@ -20,6 +20,17 @@ module.exports = {
         'light-gray':'#F2F2F2',
       }
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '0px 80px',
+        sm: '2rem',
+        lg: '0px 48px',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
+
+    },
   },
   plugins: [],
 }
