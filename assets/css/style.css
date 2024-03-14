@@ -549,7 +549,7 @@ h7{
   letter-spacing: 0em;
   text-align: left;
   background: linear-gradient(138.96deg, #FF0000 25.82%, #0055A1 154.02%);
-  padding: 8px 24px;
+  padding: 12px 24px;
   border-radius: 4px;
   color: #FEFEFE;
 }
@@ -835,6 +835,11 @@ a {
   z-index: 10;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -981,6 +986,10 @@ a {
   max-width: 500px;
 }
 
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1025,6 +1034,14 @@ a {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1051,10 +1068,6 @@ a {
 
 .gap-\[75px\] {
   gap: 75px;
-}
-
-.gap-12 {
-  gap: 3rem;
 }
 
 .gap-x-\[36px\] {
@@ -1110,6 +1123,10 @@ a {
 
 .p-10 {
   padding: 2.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .p-6 {
@@ -1366,6 +1383,10 @@ a {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-7 {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
   .md\:flex-col {
     flex-direction: column;
   }
@@ -1385,7 +1406,16 @@ a {
 }
 
 @media (max-width: 425px) {
+  .sm\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
