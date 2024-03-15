@@ -13,3 +13,25 @@ function burger_menu(){
 }
 
 burger_menu()
+
+function dropdown(){
+  const open_btn = document.querySelectorAll('#btn-open-service')
+  const block_to_open = document.querySelectorAll('.services-dropdown-block')
+
+  let i = 0;
+  for (let i = 0; i < open_btn.length;i++) {
+    open_btn[i].addEventListener('click', ()=>{
+      if(block_to_open[i].style.display == 'none'){
+        block_to_open[i].style.display = 'grid'
+        open_btn[i].style.transform = "rotate(0deg)"
+      }
+      else{
+        block_to_open[i].style.display = 'none'
+        open_btn[i].style.transform = "rotate(180deg)"
+      }
+    })
+  }
+
+}
+
+dropdown()

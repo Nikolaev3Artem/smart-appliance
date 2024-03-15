@@ -22,7 +22,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: #F2F2F2;
+        background-color: #FFFFFF;
     }
     h1{
         font-size: 52px;
@@ -81,7 +81,7 @@
         color: #02192D;
         font-family: "Open Sans";
     }
-    h7{
+    p{
         font-size: 14px;
         font-weight: 700;
         line-height: 18px;
@@ -219,10 +219,15 @@
     .title-secondary{
         @apply uppercase text-white
     }
+
 }
 
 .nav_link:hover ~ .nav_link_submenu{
     display: flex;
+}
+.dropdown-block-text:hover{
+    color: #0055A1;
+    font-size: 16px!important;
 }
 
 .nav_link_submenu{
@@ -297,7 +302,7 @@
     height: fit-content;
 }
 
-.repair-service-wrapper div h7{
+.repair-service-wrapper div p{
     font-weight: 400;
     margin-top: 8px;
 }
@@ -314,4 +319,26 @@
     width: 530px;
     font-size: 14px;
     font-weight: 400;
+}
+
+.services-wrapper{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.services-wrapper .services-block{
+    border-bottom: 1px solid #0055A1;
+    margin-top: 24px;
+}
+
+.services-dropdown-block{
+    display: none;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    margin-top: 12px;
+    gap: 8px;
+}
+
+#btn-open-service{
+    transform: rotate(180deg);
+    cursor: pointer;
 }
