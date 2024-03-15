@@ -16,7 +16,7 @@ burger_menu()
 
 function dropdown(){
   const open_btn = document.querySelectorAll('#btn-open-service')
-  const block_to_open = document.querySelectorAll('.services-dropdown-block')
+  const block_to_open = document.querySelectorAll('#drop-down-block')
 
   let i = 0;
   for (let i = 0; i < open_btn.length;i++) {
