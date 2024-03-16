@@ -785,6 +785,7 @@ a {
 .title-primary {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
   text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(0 85 161 / var(--tw-text-opacity));
@@ -876,6 +877,10 @@ a {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-3 {
@@ -1010,6 +1015,10 @@ a {
 
 .max-w-\[500px\] {
   max-width: 500px;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-12 {
@@ -1300,6 +1309,10 @@ a {
   opacity: 0.45;
 }
 
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .duration-200 {
   transition-duration: 200ms;
 }
@@ -1450,6 +1463,10 @@ a {
 
 .articles-block{
   box-shadow: 0px 4px 4px 0px #0055A173;
+}
+
+.common-replacement{
+  box-shadow: 4px 4px 24px 0px #0055A173;
 }
 
 .hover\:bg-white:hover {
