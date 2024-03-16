@@ -870,6 +870,10 @@ a {
   margin-top: 2.5rem;
 }
 
+.mt-14 {
+  margin-top: 3.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -900,10 +904,6 @@ a {
 
 .mt-\[70px\] {
   margin-top: 70px;
-}
-
-.mt-14 {
-  margin-top: 3.5rem;
 }
 
 .flex {
@@ -1118,6 +1118,10 @@ a {
 
 .gap-\[75px\] {
   gap: 75px;
+}
+
+.gap-14 {
+  gap: 3.5rem;
 }
 
 .gap-x-\[36px\] {
