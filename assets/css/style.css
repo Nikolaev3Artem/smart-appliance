@@ -1084,6 +1084,10 @@ a {
   gap: 3rem;
 }
 
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1118,10 +1122,6 @@ a {
 
 .gap-\[75px\] {
   gap: 75px;
-}
-
-.gap-14 {
-  gap: 3.5rem;
 }
 
 .gap-x-\[36px\] {
