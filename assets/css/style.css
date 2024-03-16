@@ -1465,6 +1465,11 @@ a {
   font-weight: 700;
 }
 
+.hover\:text-dark-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 85 161 / var(--tw-text-opacity));
+}
+
 .hover\:text-red:hover {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
