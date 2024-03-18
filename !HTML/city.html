@@ -7,7 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    
     <title>Document</title>
 </head>
 <body>
@@ -506,12 +513,23 @@
         </div>
     </section>
 
-    <!--  -->
+    <section class="map">
+        <div class="container">
+            <div class="grid grid-cols-2 items-center w-full">
+                <div class="w-full h-full"><div id="map"></div></div>
+                <div class="flex flex-col items-center justify-center ">
+                    <h2 class="max-w-[455px] text-center">Toronto Appliance Repair - Service Areas</h2>
+                    <h5 class="mt-10 max-w-[455px]">We are servicing all residential and commercial areas in Toronto and surrounding neighbourhoods such as  Thornhill, North York, West York, York, East York, Etobicoke and Scarborough.</h5>
+                    <a href="#" class="button-primary flex items-center w-fit mt-10"><div><img src="../assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="top-brands">
         <div class="container">
             <h2 class="title-primary">Top Brands for Your Home</h2>
-            <div class="grid grid-cols-2 lg:grid-cols-1 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-1 gap-6 mt-4">
                 <div>
                     <h5>At Fix Appliances CA, we will always do our best to repair your existing appliances if possible. Our technicians are trained to recognize and fix common problems affordably and quickly.</h5>
                     <h5>On the rare occasion when an appliance can’t be fixed, we’re ready to help. Fix Appliances CA offers a competitive appliance + rebate program on our stock appliances. That’s right. We’ll give you money for your worn-out appliance to be used when purchasing any of the brand-new replacement appliances we have available in our store!</h5>
