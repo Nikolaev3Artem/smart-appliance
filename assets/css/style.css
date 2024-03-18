@@ -820,6 +820,10 @@ a {
   color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -868,6 +872,10 @@ a {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .mb-6 {
@@ -932,10 +940,6 @@ a {
 
 .mt-\[70px\] {
   margin-top: 70px;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .flex {
@@ -1052,28 +1056,8 @@ a {
   width: 100%;
 }
 
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-\[500px\] {
   max-width: 500px;
-}
-
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
-
-.max-w-min {
-  max-width: -moz-min-content;
-  max-width: min-content;
 }
 
 .list-disc {
@@ -1705,6 +1689,10 @@ a {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-2 {
