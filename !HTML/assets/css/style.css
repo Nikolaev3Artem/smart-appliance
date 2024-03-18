@@ -220,6 +220,16 @@
     .title-secondary{
         @apply uppercase text-white
     }
+    .button-secondary{
+        @apply w-fit bg-dark-blue rounded-md text-white px-4 py-2 active:bg-white active:text-red uppercase font-bold
+    }
+    .button-active{
+        @apply bg-white text-red 
+    }
+}
+
+.button-secondary{
+    box-shadow: 4px 4px 24px 0px #0055A173;
 }
 
 .nav_link:hover ~ .nav_link_submenu{
@@ -447,6 +457,7 @@
 }
 
 .text-blog .main-text ul li ul li{
+    display: inline;
     list-style-type: disc!important;
     margin: 4px 0px;
     margin-left: 26px;
