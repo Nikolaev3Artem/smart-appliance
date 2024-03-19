@@ -902,6 +902,10 @@ a {
   margin-top: 0px;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -946,10 +950,6 @@ a {
   margin-top: 70px;
 }
 
-.mt-1 {
-  margin-top: 0.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -972,6 +972,10 @@ a {
 
 .h-\[145px\] {
   height: 145px;
+}
+
+.h-\[150px\] {
+  height: 150px;
 }
 
 .h-\[200px\] {
@@ -1011,10 +1015,6 @@ a {
   height: 100%;
 }
 
-.h-\[150px\] {
-  height: 150px;
-}
-
 .w-\[150px\] {
   width: 150px;
 }
@@ -1035,6 +1035,10 @@ a {
   width: 260px;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .w-\[335px\] {
   width: 335px;
 }
@@ -1049,6 +1053,10 @@ a {
 
 .w-\[70\%\] {
   width: 70%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .w-\[80px\] {
@@ -1068,14 +1076,6 @@ a {
   width: 100%;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
 .max-w-\[455px\] {
   max-width: 455px;
 }
@@ -1086,6 +1086,10 @@ a {
 
 .list-disc {
   list-style-type: disc;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-12 {
@@ -1110,10 +1114,6 @@ a {
 
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1160,6 +1160,10 @@ a {
   justify-content: space-around;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -1174,6 +1178,10 @@ a {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-28 {
+  gap: 7rem;
 }
 
 .gap-3 {
@@ -1192,6 +1200,10 @@ a {
   gap: 1.5rem;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
 .gap-\[10px\] {
   gap: 10px;
 }
@@ -1206,22 +1218,6 @@ a {
 
 .gap-\[75px\] {
   gap: 75px;
-}
-
-.gap-1 {
-  gap: 0.25rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-28 {
-  gap: 7rem;
 }
 
 .gap-x-\[36px\] {
@@ -1351,11 +1347,6 @@ a {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .pe-0 {
@@ -1796,26 +1787,17 @@ a {
     justify-content: center;
   }
 
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .lg\:gap-0 {
     gap: 0px;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-  }
-
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .lg\:pb-0 {
-    padding-bottom: 0px;
   }
 
   .lg\:pt-0 {
@@ -1850,6 +1832,10 @@ a {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:px-10 {
