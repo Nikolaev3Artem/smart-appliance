@@ -511,6 +511,7 @@
     color: red;
     font-weight: 900;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 @media (max-width: 1025px){
