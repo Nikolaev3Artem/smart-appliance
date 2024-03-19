@@ -864,6 +864,16 @@ a {
   z-index: 10;
 }
 
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -1711,6 +1721,17 @@ a {
   color: #FFFFFF;
 }
 
+.button-home{
+  padding: 8px 24px 8px 24px;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid red;
+  opacity: 0px;
+  color: red;
+  font-weight: 900;
+  font-size: 18px;
+}
+
 @media (max-width: 1025px){
   .main-text{
     width: 100%!important;
@@ -1793,6 +1814,10 @@ a {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-8 {
+    gap: 2rem;
   }
 
   .lg\:py-10 {
