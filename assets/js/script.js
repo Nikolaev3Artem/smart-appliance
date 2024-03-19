@@ -1,3 +1,25 @@
+
+function onEntry(entry) {
+  entry.forEach((change) => {
+      if (change.isIntersecting) {
+          const elementsToShow =
+              change.target.querySelectorAll(".show-animation");
+          let delay = 0;
+          elementsToShow.forEach((el) => {
+              setTimeout(() => el.classList.add("element-show"), delay);
+              delay += 200;
+          });
+      }
+  });
+}
+
+let options = { threshold: [0.1] };
+let observer = new IntersectionObserver(onEntry, options);
+let rows = document.querySelectorAll(".animation-row");
+for (let row of rows) {
+    observer.observe(row);
+}
+
 function burger_menu(){
     const menu = document.querySelector("#mobile_menu")
     const burger = document.querySelector("#burger_btn")
@@ -36,8 +58,3 @@ function dropdown(){
 
 dropdown()
 
-var map = L.map('map').setView([51.505, -0.09], 13);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);

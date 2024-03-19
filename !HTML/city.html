@@ -7,7 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -408,22 +415,22 @@
     </section>
 
     <section class="bg-dark-blue">
-        <div class="container py-20">
+        <div class="container py-20 animation-row">
             <h2 class="title-secondary">Some Examples of Our Work in Toronto</h2>
-            <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 mt-8">
-                <div class="w-full">
+            <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 mt-8 ">
+                <div class="w-full show-animation">
                     <div class="w-full"><img src="../assets/img/content/our-work.png" alt="" class="w-full h-full"></div>
                     <div class="p-6 bg-white">
                         <p class="font-normal">The customer complained that the induction cooktop Forno would not heat up. Our technician performed a multi-point inspection. Diterminated that the top heat element was damaged and replaced the faulty part. The cooktop was assembled, placed back in its original condition and location, and thoroughly tested. The appliance powers on, starts, and heats well. No issues of any sort were present after job completion.</p>
                     </div>
                 </div>
-                <div class="w-full">
+                <div class="w-full show-animation">
                     <div class="w-full"><img src="../assets/img/content/our-work.png" alt="" class="w-full h-full"></div>
                     <div class="p-6 bg-white">
                         <p class="font-normal">The customer complained that the induction cooktop Forno would not heat up. Our technician performed a multi-point inspection. Diterminated that the top heat element was damaged and replaced the faulty part. The cooktop was assembled, placed back in its original condition and location, and thoroughly tested. The appliance powers on, starts, and heats well. No issues of any sort were present after job completion.</p>
                     </div>
                 </div>
-                <div class="w-full">
+                <div class="w-full show-animation">
                     <div class="w-full"><img src="../assets/img/content/our-work.png" alt="" class="w-full h-full"></div>
                     <div class="p-6 bg-white">
                         <p class="font-normal">The customer complained that the induction cooktop Forno would not heat up. Our technician performed a multi-point inspection. Diterminated that the top heat element was damaged and replaced the faulty part. The cooktop was assembled, placed back in its original condition and location, and thoroughly tested. The appliance powers on, starts, and heats well. No issues of any sort were present after job completion.</p>
@@ -435,8 +442,8 @@
 
     <section class="about-us">
         <div class="container mt-10">
-            <div class="grid grid-cols-2 md:grid-cols-1 gap-6">
-                <div class="flex flex-col p-4">
+            <div class="grid grid-cols-2 md:grid-cols-1 gap-6 animation-row">
+                <div class="flex flex-col p-4 show-animation">
                     <div class="flex flex-row items-center">
                         <div>
                             <img src="../assets/img/icons/icon cert.png" alt="">
@@ -453,7 +460,7 @@
                         customers and be pleased to refer us to your family and
                         friends.</h5>
                 </div>
-                <div class="flex flex-col p-4">
+                <div class="flex flex-col p-4 show-animation">
                     <div class="flex flex-row items-center">
                         <div>
                             <img src="../assets/img/icons/icon advantage.png" alt="">
@@ -470,7 +477,7 @@
                         will do their best to complete your appliance repair in one
                         service call.</h5>
                 </div>
-                <div class="flex flex-col p-4">
+                <div class="flex flex-col p-4 show-animation">
                     <div class="flex flex-row items-center">
                         <div>
                             <img src="../assets/img/icons/Group (1).png" alt="">
@@ -487,7 +494,7 @@
                         customers and be pleased to refer us to your family and
                         friends.</h5>
                 </div>
-                <div class="flex flex-col p-4">
+                <div class="flex flex-col p-4 show-animation">
                     <div class="flex flex-row items-center">
                         <div>
                             <img src="../assets/img/icons/icon advantage (1).png" alt="">
@@ -501,7 +508,7 @@
                         appliances. Utilizing the skills of a quality team of trained,
                         professional appliance repair technicians.</h5>
                 </div>
-                <div class="flex flex-col p-4">
+                <div class="flex flex-col p-4 show-animation">
                     <div class="flex flex-row items-center">
                         <div>
                             <img src="../assets/img/icons/Group (1).png" alt="">
@@ -518,7 +525,7 @@
                         customers and be pleased to refer us to your family and
                         friends.</h5>
                 </div>
-                <div class="flex flex-col p-4">
+                <div class="flex flex-col p-4 show-animation">
                     <div class="flex flex-row items-center">
                         <div>
                             <img src="../assets/img/icons/icon advantage (1).png" alt="">
@@ -598,6 +605,84 @@
                 <div><img src="../assets/img/content/Link → true-refrigeration-logo.png.png" alt=""></div>
             </div>
             <a href="#" class="button-primary flex items-center"><div><img src="../assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="title-primary">What Our Customers Say About Us on GOOGLE</h2>
+            <div class="grid grid-cols-4 lg:grid-cols-2 md:grid-cols-1 gap-6 animation-row">
+                <div class="bg-white border border-light-gray p-4 rounded-md show-animation">
+                    <div class="flex flex-row items-center gap-2">
+                        <div class="w-fit"><img src="../assets/img/icons/review-person.png" alt=""></div>
+                        <div>
+                            <h6>Samantha Payne</h6>
+                            <div class="flex flex-row gap-1 mt-1">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-normal mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                    <p class="text-blue-400 mt-6 font-normal">23 Nov 2021</p>
+                </div>
+                <div class="bg-white border border-light-gray p-4 rounded-md show-animation">
+                    <div class="flex flex-row items-center gap-2">
+                        <div class="w-fit"><img src="../assets/img/icons/review-person.png" alt=""></div>
+                        <div>
+                            <h6>Samantha Payne</h6>
+                            <div class="flex flex-row gap-1 mt-1">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-normal mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                    <p class="text-blue-400 mt-6 font-normal">23 Nov 2021</p>
+                </div>
+                <div class="bg-white border border-light-gray p-4 rounded-md show-animation">
+                    <div class="flex flex-row items-center gap-2">
+                        <div class="w-fit"><img src="../assets/img/icons/review-person.png" alt=""></div>
+                        <div>
+                            <h6>Samantha Payne</h6>
+                            <div class="flex flex-row gap-1 mt-1">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-normal mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                    <p class="text-blue-400 mt-6 font-normal">23 Nov 2021</p>
+                </div>
+                <div class="bg-white border border-light-gray p-4 rounded-md show-animation">
+                    <div class="flex flex-row items-center gap-2">
+                        <div class="w-fit"><img src="../assets/img/icons/review-person.png" alt=""></div>
+                        <div>
+                            <h6>Samantha Payne</h6>
+                            <div class="flex flex-row gap-1 mt-1">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                                <img src="../assets/img/icons/star-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-normal mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+                    <p class="text-blue-400 mt-6 font-normal">23 Nov 2021</p>
+                </div>
+            </div>
+            <a href="blog-single.html" class="text-red underline w-full mt-8"><p class="text-red text-center w-full" >Read More Customer Reviews</p></a>
+
         </div>
     </section>
 
@@ -902,5 +987,7 @@
     </footer>
 
     <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/map.js"></script>
+
 </body>
 </html>
