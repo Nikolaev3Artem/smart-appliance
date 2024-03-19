@@ -894,6 +894,10 @@ a {
   margin-inline-end: 1.5rem;
 }
 
+.ms-0 {
+  margin-inline-start: 0px;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -1366,6 +1370,11 @@ a {
   text-transform: uppercase;
 }
 
+.text-dark {
+  --tw-text-opacity: 1;
+  color: rgb(2 25 45 / var(--tw-text-opacity));
+}
+
 .text-dark-blue {
   --tw-text-opacity: 1;
   color: rgb(0 85 161 / var(--tw-text-opacity));
@@ -1646,6 +1655,24 @@ a {
 #map{
   width: 100%;
   height: 100%;
+}
+
+.main-text .contact-form h2{
+  color: #02192D;
+  margin-left: 0;
+}
+
+.text-blog .faq .container{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-blog .faq .faq-wrapper{
+  width: 100%;
+}
+
+.text-blog .faq .container h2.title-secondary{
+  color: #FFFFFF;
 }
 
 @media (max-width: 1025px){

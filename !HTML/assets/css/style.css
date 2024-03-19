@@ -483,6 +483,25 @@
     height: 100%;
 }
 
+.main-text .contact-form h2{
+    color: #02192D;
+    margin-left: 0;
+}
+
+.text-blog .faq .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-blog .faq .faq-wrapper{
+    width: 100%;
+}
+
+
+.text-blog .faq .container h2.title-secondary{
+    color: #FFFFFF;
+}
+
 @media (max-width: 1025px){
     .main-text{
         width: 100%!important;
