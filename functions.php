@@ -7,6 +7,39 @@ add_action('wp_enqueue_scripts', function(){
 
 });
 
-add_theme_support('custom-logo')
+add_theme_support('custom-logo');
+add_action( 'init', 'create_custom_post_type' );
+
+function create_custom_post_type() {
+    register_post_type( 'Repair',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Ремонт' ),
+                'singular_name' => __( 'Ремонт' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'Repair'),
+        )
+    );
+    register_post_type( 'faq',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Часто задаваємі запитання' ),
+                'singular_name' => __( 'запитання' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'faq'),
+        )
+    );
+    remove_post_type_support( 'faq', 'editor' );
+
+}
+
+register_taxonomy('Repair','Repair');
+register_taxonomy('faq','faq');
 
 ?>
