@@ -2,26 +2,26 @@
         <div class="container">
             <h1 class="title-secondary">MEET OUR LEADERSHIP TEAM</h1>
             <div class="flex flex-row lg:flex-col lg:gap-6 gap-[140px] mt-8">
+            <?php
+                query_posts(array (  
+                'post_type' => 'our-team'
+                )); 
+                while (have_posts()) : the_post();
+            ?>
                 <div class="relative w-full">
                     <div class="absolute top-[50px] left-[-100px] w-[200px] h-[200px]">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/content/team-member.png" alt="" class="w-full h-full rounded-full">
+                        <img src="<?= CFS()->get('our-team-img') ?>" alt="" class="w-full h-full rounded-full">
                     </div>
                     <div class="bg-white p-6 ps-[108px] flex flex-col max-w-[500px]">
-                        <h4 class="font-bold">Oleg Chudnovski</h4>
-                        <p class="text-red mt-2">Chief Marketing Officer</p>
-                        <p class="font-normal mt-4">Joined our team in 2014. A mastermind behind digital marketing. Responsible for developing, implementing and managing marketing campaigns that promote the company, its products and services. He plays a significant role in enhancing brand awareness within the digital space as well as driving website traffic and acquiring leads & customers. Oleg is also known as "The Mermaid Man." Hobbies: Scuba diving, Fishing & a groupie of seamanship.</p>
+                        <h4 class="font-bold"><?= CFS()->get('our-team-name') ?></h4>
+                        <p class="text-red mt-2"><?= CFS()->get('our-team-position') ?></p>
+                        <p class="font-normal mt-4"><?= CFS()->get('our-team-desc') ?></p>
                     </div>
                 </div>
-                <div class="relative w-full">
-                    <div class="absolute top-[50px] left-[-100px] w-[200px] h-[200px]">
-                        <img src="<?php bloginfo('template_url'); ?>/assets/img/content/team-member.png" alt="" class="w-full h-full rounded-full">
-                    </div>
-                    <div class="bg-white p-6 ps-[108px] flex flex-col max-w-[500px]">
-                        <h4 class="font-bold">Oleg Chudnovski</h4>
-                        <p class="text-red mt-2">Chief Marketing Officer</p>
-                        <p class="font-normal mt-4">Joined our team in 2014. A mastermind behind digital marketing. Responsible for developing, implementing and managing marketing campaigns that promote the company, its products and services. He plays a significant role in enhancing brand awareness within the digital space as well as driving website traffic and acquiring leads & customers. Oleg is also known as "The Mermaid Man." Hobbies: Scuba diving, Fishing & a groupie of seamanship.</p>
-                    </div>
-                </div>
+            <?php
+                endwhile;
+                wp_reset_query();
+            ?>
             </div>
         </div>
     </sections>

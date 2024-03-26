@@ -23,6 +23,42 @@ function create_custom_post_type() {
             'rewrite' => array('slug' => 'Repair'),
         )
     );
+    register_post_type( 'reviews',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Відгуки' ),
+                'singular_name' => __( 'Відгук' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'reviews'),
+        )
+    );
+    register_post_type( 'our-team',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Наша команда' ),
+                'singular_name' => __( 'Наша команда' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'our-team'),
+        )
+    );
+    register_post_type( 'service-range',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'асортимент послуг' ),
+                'singular_name' => __( 'асортимент послуг' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'service-range'),
+        )
+    );
     register_post_type( 'faq',
     // CPT Options
         array(
@@ -41,5 +77,7 @@ function create_custom_post_type() {
 
 register_taxonomy('Repair','Repair');
 register_taxonomy('faq','faq');
+register_taxonomy('reviews','reviews');
+register_taxonomy('our-team','our-team');
 
 ?>

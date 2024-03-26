@@ -1,4 +1,4 @@
-<section class="professional-appliance">
+    <section class="professional-appliance">
         <div class="container">
             <h2 class="title-primary">Professional Appliance Services We Provide</h2>
             <h6 class="mb-8">Select which appliance needs service and repair:</h6>
