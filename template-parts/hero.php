@@ -2,7 +2,7 @@
         <div class="container md:ps-0 flex flex-row pe-0 md:flex-col gap-6">
             <div class="container p-0 md:px-10 md:mb-4">
                 <div class="w-full">
-                    <h1 class="title-primary mt-9">smart appliance Repair Service</h1>
+                    <h1 class="title-primary text-start mt-9">smart appliance Repair Service</h1>
                     <h4 class="text-red mt-6">Your Local Appliance Repair Company</h4>
                     <h5 class="mt-4">TSSA licensed repair of Electric and Induction appliances,
                         including refrigerators, wine coolers, freezers, ice makers,

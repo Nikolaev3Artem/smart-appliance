@@ -11,7 +11,7 @@ add_theme_support('custom-logo');
 add_action( 'init', 'create_custom_post_type' );
 
 function create_custom_post_type() {
-    register_post_type( 'Repair',
+    register_post_type( 'repair',
     // CPT Options
         array(
             'labels' => array(
@@ -20,7 +20,7 @@ function create_custom_post_type() {
             ),
             'public' => true,
             'has_archive' => false,
-            'rewrite' => array('slug' => 'Repair'),
+            'rewrite' => array('slug' => 'repair'),
         )
     );
     register_post_type( 'reviews',
@@ -75,7 +75,7 @@ function create_custom_post_type() {
 
 }
 
-register_taxonomy('Repair','Repair');
+register_taxonomy('repair','repair');
 register_taxonomy('faq','faq');
 register_taxonomy('reviews','reviews');
 register_taxonomy('our-team','our-team');

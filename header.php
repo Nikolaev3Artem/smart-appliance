@@ -22,7 +22,7 @@
     <header>
         <div class="container">
             <div class="flex flex-row justify-around items-center w-full h-[68px] sm:my-4">
-                <a href="index.html" class="z-10"><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/logo.png" alt="" class="w-[150px] h-[145px] mt-[70px] z-10"></a>
+                <a href="/" class="z-10"><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/logo.png" alt="" class="w-[150px] h-[145px] mt-[70px] z-10"></a>
                 <div class="flex flex-row md:flex-col justify-around items-center w-full h-full">
                     <h5 class="text-dark-blue font-bold lg:hidden">Mon - Fri: <br>
                         08.00 AM 10.00 PM</h5>

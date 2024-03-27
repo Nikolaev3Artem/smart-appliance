@@ -1677,17 +1677,25 @@ a {
 }
 
 .text-blog .main-text-2 ul {
+  display: list-item;
   margin: 24px 0px;
 }
 
 .text-blog .main-text-2 ul li {
-  display: flex;
-  flex-direction: row;
+  display: list-item;
+  list-style-type: disc!important;
   background: #FEFEFEFE;
   padding: 0px;
-  margin: 6px 0px;
+  margin: 7px 0px;
   gap: 24px;
   margin-left: 26px;
+}
+
+.text-blog .main-text-2 h2{
+  text-transform: uppercase;
+  color: #0055A1;
+  margin: 16px 0px;
+  text-align: start;
 }
 
 .text-blog .main-text ul li img{
@@ -1699,10 +1707,15 @@ a {
   color: #0055A1;
 }
 
+.text-blog .main-text ul li ul{
+  display: list-item;
+}
+
 .text-blog .main-text ul li ul li{
-  display: inline;
+  display: list-item;
   list-style-type: disc!important;
-  margin: 4px 0px;
+  list-style: linear-gradient(138.96deg, #FF0000 25.82%, #0055A1 154.02%);
+  margin: 8px 0px;
   margin-left: 26px;
   padding: 0;
 }
