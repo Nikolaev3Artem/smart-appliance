@@ -144,7 +144,7 @@
     }
     label{
         position: absolute;
-        top: -10px;
+        top: 8px;
         left: 10px;
         z-index: 20;
         font-size: 12px;
@@ -222,6 +222,9 @@
     }
     .button-secondary{
         @apply w-fit bg-dark-blue rounded-md text-white px-4 py-2 hover:bg-white hover:text-red active:bg-white active:text-red uppercase font-bold
+    }
+    .button-secondary.active{
+        @apply w-fit rounded-md  px-4 py-2 bg-white text-red uppercase font-bold
     }
     .button-active{
         @apply bg-white text-red 
@@ -547,6 +550,14 @@
 .meet-fix h4, .meet-fix h5{
     color: white;
     margin: 16px 0px;
+}
+
+.faq-info-hidden {
+    display: none;
+}
+
+.faq-tab-active{
+    display: grid;
 }
 
 @media (max-width: 1025px){

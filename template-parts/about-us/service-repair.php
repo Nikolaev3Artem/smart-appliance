@@ -10,7 +10,7 @@
                     <h5>As an added incentive to provide even more value for your dollar, we offer extra
                         savings coupons for first-time, repeat, senior, and referral customers. Ask our
                         friendly customer service representative how you can obtain additional savings.</h5>
-                    <a href="#" class="button-primary flex items-center w-fit mt-8"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
+                    <a href="/request-service/" class="button-primary flex items-center w-fit mt-8"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
                 </div>
             </div>
         </div>

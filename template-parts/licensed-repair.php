@@ -33,6 +33,6 @@
                 <div><img src="<?php bloginfo('template_url'); ?>/assets/img/content/Link → true-refrigeration-logo.png.png" alt=""></div>
                 <div><img src="<?php bloginfo('template_url'); ?>/assets/img/content/Link → true-refrigeration-logo.png.png" alt=""></div>
             </div>
-            <a href="#" class="button-primary flex items-center"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
+            <a href="/request-service/" class="button-primary flex items-center"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
         </div>
     </section>

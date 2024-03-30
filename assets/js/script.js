@@ -58,3 +58,44 @@ function dropdown(){
 
 dropdown()
 
+
+const faqTabs = document.querySelector(".faq-tabs");
+const allFaqInfo = document.querySelectorAll(".faq-info");
+const allFaqTabs = document.querySelectorAll(".faq-tab");
+
+function onTabClick(e) {
+    let activeTab = document.querySelector(".active");
+    let activeContent = document.querySelector(
+        ".faq-info:not(.faq-info-hidden)"
+    );
+    if (activeTab === null) {
+        activeTab = e.target;
+    }
+
+    const content = [...allFaqInfo].find(
+        (el) => el.dataset.name === e.target.id
+    );
+
+    if (content === undefined) {
+        return;
+    }
+
+    if (activeContent === null) {
+        activeContent = content;
+    }
+
+    activeTab.classList.remove("active");
+    e.target.classList.add("active");
+
+    activeContent.classList.add("faq-info-hidden");
+    content.classList.remove("faq-info-hidden");
+
+    activeTab = e.target;
+    activeContent = content;
+}
+if (faqTabs) {
+    allFaqTabs[0].classList.add("active");
+    allFaqInfo[0].classList.remove("faq-info-hidden");
+    faqTabs.addEventListener("click", onTabClick);
+}
+

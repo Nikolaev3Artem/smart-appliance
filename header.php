@@ -24,14 +24,14 @@
             <div class="flex flex-row justify-around items-center w-full h-[68px] sm:my-4">
                 <a href="/" class="z-10"><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/logo.png" alt="" class="w-[150px] h-[145px] mt-[70px] z-10"></a>
                 <div class="flex flex-row md:flex-col justify-around items-center w-full h-full">
-                    <h5 class="text-dark-blue font-bold lg:hidden">Mon - Fri: <br>
-                        08.00 AM 10.00 PM</h5>
+                    <h5 class="text-dark-blue font-bold lg:hidden"><?= CFS()->get('contacts-work-days', 99) ?>: <br>
+                    <?= CFS()->get('contacts-work-hours', 99) ?></h5>
                     <p class="text-dark-blue font-bold sm:w-full">Technicians Available Now: February 26</p>
-                    <a href="tel://+12538933671" class="flex items-center text-dark-blue font-bold text-[18px] lg:hidden">
+                    <a href="tel://<?= CFS()->get('contacts-phone-number', 99) ?>" class="flex items-center text-dark-blue font-bold text-[18px] lg:hidden">
                         <div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Phone blue.png" alt="" class="img-fluid me-3"></div>
-                        +12538933671
+                        <?= CFS()->get('contacts-phone-number', 99) ?>
                     </a>
-                    <a href="request-service.html" class="button-primary flex items-center"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
+                    <a href="/request-service/" class="button-primary flex items-center"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
                 </div>
             </div>
         </div>
@@ -125,10 +125,10 @@
                     </div>
                 </div>
                 <a href="city.html"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Service Areas</h6></a>
-                <a href="about-us.html"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">About</h6></a>
-                <a href="blog.html"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Blog</h6></a>
+                <a href="/about-us/"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">About</h6></a>
+                <a href="/blog/"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Blog</h6></a>
                 <a href="#reviews"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Reviews</h6></a>
-                <a href="contact.html"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Contact</h6></a>
+                <a href="/contact-us/"><h6 class="nav_link relative text-white uppercase hover:bg-white hover:text-red duration-200 rounded-[4px] px-4">Contact</h6></a>
             </div>
             <div class="container hidden lg:flex flex-row justify-end gap-10 relative">
                 <div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Phone white.png" alt="" class="img-fluid"></div>

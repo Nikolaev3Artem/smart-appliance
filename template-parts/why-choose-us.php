@@ -15,8 +15,11 @@
                             <p class="text-xs text-dark-blue"><?= $сhoose_us_block["why-choose-us-block-subtitle"] ?></p>
                         </div>
                     </div>
-                    <div class="mt-6">
-                        <?= $сhoose_us_block["why-choose-us-block-desc"] ?>
+                    <div class="mt-6 ">
+                        <div class="text-white">
+                            <?= $сhoose_us_block["why-choose-us-block-desc"] ?>
+
+                        </div>
                     </div>
                 </div>
                 <?php 
@@ -24,8 +27,7 @@
                 ?>
             </div>
 
-            <h6 class="text-center font-normal mt-14">Are you looking for quality service to repair refrigerators? Contact Fix Appliances CA and trust your problem issue to fix the refrigerator of any type and model. We can
-                handle any problems as soon as possible and at affordable prices.</h6>
+            <h6 class="text-center font-normal mt-10"><?= CFS()->get('why-choose-us-text-before-table'); ?></h6>
             <table class="same-day-appliance-table">
                 <?php 
                   $сhoose_us_table_rows = CFS()->get('why-choose-us-table');
@@ -38,7 +40,8 @@
                 <?php 
                     };
                 ?>
-                
             </table>
+            <a href="/request-service/" class="button-primary flex items-center mt-10"><div><img src="<?php bloginfo('template_url'); ?>/assets/img/icons/icon Work.png" alt="" class="w-[25px] h-[25px] me-3"></div>Request Service</a>
+
         </div>
     </section>

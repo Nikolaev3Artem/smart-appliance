@@ -12,7 +12,7 @@
                 <div class="show-animation">
                     <h4 class="w-full text-center"><?= CFS()->get('service-range-title') ?></h4>
                     <p><?= CFS()->get('service-range-desc') ?></p>
-                    <a href="#" class="text-red text-end w-full">REQUEST SERVICE</a>
+                    <a href="/request-service/" class="text-red text-end w-full">REQUEST SERVICE</a>
                 </div>
             <?php
                 endwhile;

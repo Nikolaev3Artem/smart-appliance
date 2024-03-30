@@ -7,7 +7,7 @@ Template Name: single repair
 
 <?php
     get_template_part('template-parts/hero');
-    get_template_part('template-parts/repair/why-choose-us');
+    get_template_part('template-parts/why-choose-us');
     get_template_part('template-parts/repair/content');
     get_template_part('template-parts/reviews');
     get_template_part('template-parts/repair/contact-us');

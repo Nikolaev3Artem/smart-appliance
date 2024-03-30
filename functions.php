@@ -23,6 +23,18 @@ function create_custom_post_type() {
             'rewrite' => array('slug' => 'repair'),
         )
     );
+    register_post_type( 'blog',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Блог' ),
+                'singular_name' => __( 'Блог' )
+            ),
+            'public' => true,
+            'has_archive' => false,
+            'rewrite' => array('slug' => 'blog'),
+        )
+    );
     register_post_type( 'reviews',
     // CPT Options
         array(
@@ -79,5 +91,5 @@ register_taxonomy('repair','repair');
 register_taxonomy('faq','faq');
 register_taxonomy('reviews','reviews');
 register_taxonomy('our-team','our-team');
-
+register_taxonomy('blog','blog');
 ?>
